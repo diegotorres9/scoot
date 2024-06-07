@@ -5,16 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   
   <title>Frontend Mentor | Scoot</title>
 </head>
 <body>
 
-  About
-  Location
-  Careers
+  <header>
+  <svg id="mobile-menu-icon" class="mobile-menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16">
+    <g fill="#FCB72B" fill-rule="evenodd">
+      <path
+        d="M0 0h19.692v3.692H0zM0 6.154h19.692v3.692H0zM0 12.308h19.692V16H0z" />
+    </g>
+  </svg>
+  <svg id="close-menu-icon" class="close-menu-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+    <g fill="#FCB72B" fill-rule="evenodd">
+      <path d="M3.19.733l13.923 13.924-2.61 2.61L.579 3.343z" />
+      <path d="M.579 14.657L14.503.733l2.61 2.61L3.19 17.267z" />
+    </g>
+  </svg>
+  <img id="scoot-logo" class="scoot-logo" src="./assets/logo.svg" alt="Scoot logo.">
+  <nav id="fullscreen-nav" class="fullscreen-nav" style="display: none;">
+    <ul>
+      <li>About</li>
+      <li>Location</li>
+      <li>Careers</li>
+      <li>Get Scootin</li>
+    </ul>
+  </nav>
+  </header>
+    <nav id="mobile-nav" class="mobile-nav">
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li>About</li>
+          <li>Location</li>
+          <li>Careers</li>
+          <li>Get Scootin</li>
+        </ul>
+      </div>
+    </nav>
 
-  Get Scootin
+  
+  
+  
+
+  
 
 
 
@@ -79,5 +115,6 @@
   Location
   Careers
 
+<script defer src="./scripts.js"></script>
 </body>
 </html>
