@@ -1,2 +1,6 @@
 @import url('./header.css');
+@import url('./buttons.css');
 @import url('./index.css');
+body {
+    overflow-y: hidden;
+}
