@@ -1,7 +1,7 @@
 .scootin-cta-btn {
     text-decoration: none;
     background-color: #FCB72B;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: 'Space Mono', monospace;
@@ -10,7 +10,7 @@
 .learn-more-btn {
     text-decoration: none;
     background-color: #FCB72B;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: 'Space Mono', monospace;
