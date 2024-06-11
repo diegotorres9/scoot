@@ -32,10 +32,40 @@ header .close-menu-icon
 {
     display: none;
     width: 256px;
-    height: 100%;
+    height: 720px;
     background-color: #333A44;
     position: fixed;
     left: 0;
-    overflow-x: hidden;
+    overflow-y: hidden;
     z-index: 2;
+}
+.mobile-menu {
+    width: 100%;
+    background-color: #333A44;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.mobile-menu ul {
+    height: 100%;
+    margin: 0 0 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: 1fr; */
+}
+.mobile-menu ul li {
+    list-style-type: none;
+}
+.mobile-menu ul li a {
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.125rem;
+    color: #E5ECF4
+}
+.mobile-menu ul li:last-child{
+    margin-top: 526px;
+    margin-bottom: 1.5rem;
+    /* align-self: center; */
 }
