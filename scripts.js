@@ -5,8 +5,8 @@ mobileMenu = document.getElementById('mobile-nav');
 closeMenu = document.getElementById('close-menu-icon');
 menuHamburger.addEventListener('click', (e) => {
     menuHamburger.style.visibility = 'hidden';
-    mobileMenu.style.display = 'block';
-    closeMenu.style.display = 'block';
+    mobileMenu.style.display = 'flex';
+    closeMenu.style.display = 'flex';
 });
 closeMenu.addEventListener('click', (e) => {
     menuHamburger.style.visibility = 'visible';
