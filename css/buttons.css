@@ -16,3 +16,21 @@
     font-family: 'Space Mono', monospace;
     padding: 1rem 2.5rem;
 }
+.say-hello-btn {
+    text-decoration: none;
+    background-color: #FCB72B;
+    color: #FFFFFF !important;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    padding: 1rem 2.5rem;
+}
+.apply-btn {
+    text-decoration: none;
+    background-color: #FCB72B;
+    color: #FFFFFF !important;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    padding: 1rem 2.5rem;
+}
