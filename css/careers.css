@@ -1,0 +1,163 @@
+.careers-hero {
+    background-image: url('../assets/images/careers-location-hero-mobile.jpg');
+    position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 128px;
+}
+.careers-hero h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(2.5rem, 2vw + 1rem, 3.5rem);
+    line-height: clamp(2.5rem, 2vw + 1rem, 3.5rem);
+    color: #FFFFFF;
+}
+.join-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 72px 32px 120px 32px;
+}
+.join-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.join-container img {
+    border-radius: 50%;
+    margin-bottom: 56px;
+}
+.join-container .join-arrow-container {
+    position: absolute;
+}
+.join-arrow-container svg {
+    position: relative;
+    bottom: 230px;
+    left: 35px;
+}
+.join-container .join-container-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.join-container:first-child {
+    margin-bottom: 120px;
+}
+.join-container-copy h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+    line-height: clamp(2rem, 2vw + 1rem, 3rem);
+    margin-bottom: 2rem;
+    color: #495567;
+}
+.join-container-copy p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.563rem;
+    color: #939CAA;
+}
+/* ---------------------------------------------- */
+.why-join-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 72px 32px 120px 32px;
+    position: relative;
+}
+.why-join-wrapper h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+    line-height: clamp(2rem, 2vw + 1rem, 3rem);
+    color: #495567;
+    margin-bottom: 64px;
+}
+.why-join-wrapper .join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.join:not(:last-child) {
+    margin-bottom: 56px;
+}
+.join-image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.join-image-container img {
+    border-radius: 50%;
+}
+.join-image-container span {
+    border-radius: 50%;
+    background-color: #FCB72B;
+    color: #495567;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    width: 96px;
+    height: 96px;
+    padding: 2rem;
+    position: absolute;
+    bottom: -50px;
+}
+.join .join-copy h3{
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    line-height: 1.563rem;
+    color: #495567;
+    margin-bottom: 28px;
+}
+.join .join-copy p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #939CAA;
+}
+/* --------------------------------- */
+.jobs-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 72px 32px 120px 32px;
+}
+.jobs-wrapper .job {
+    margin-bottom: 1rem;
+    background-color: #F2F5F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.25rem 2rem 2rem 2rem;
+    width: 311px;
+    text-align: center;
+}
+.job-copy h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(1.125rem, 2vw + 1rem, 1.5rem);
+    line-height: clamp(1.5rem, 2vw + 1rem, 1.75rem);
+    color: #495567;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.job-copy p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.563rem;
+    color: #495567;
+    margin-bottom: 1rem;
+}
