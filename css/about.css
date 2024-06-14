@@ -145,6 +145,9 @@
     color: #495567;
     margin-bottom: 3rem;
 }
+.works-container {
+    margin-bottom: 48px;
+}
 .works-container h3 { 
     font-family: 'Space Mono', monospace;
     font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
@@ -160,19 +163,22 @@ details {
 }
 details summary {
     font-family: 'Space Mono', monospace;
-    font-size: clamp(1.125rem, 2vw + 1rem, 1.5rem);
+    font-size: clamp(1.125rem, 0.993rem + 0.563vw, 1.5rem);
     line-height: clamp(1.5rem, 2vw + 1rem, 1.75rem);
     color: #495567;
-    /* list-style-image: url('../assets/icons/chevron.svg'); */
     list-style: none;
     text-align: start;
+    /* overflow-wrap: break-word; */
+
 }
 summary::-webkit-details-marker {
     display: none;
 }
 summary::after {
     content: url('../assets/icons/chevron.svg');
+    display: inline-block;
     margin-left: 1rem;
+    grid-column: 2;
 }
 details[open] summary {
     margin-bottom: 1.5rem;
@@ -188,4 +194,12 @@ details p {
     font-size: 1rem;
     line-height: 1.563rem;
     color: #495567;
+}
+.driving-container h3 { 
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    line-height: clamp(1.75rem, 2vw + 1rem, 3rem);
+    color: #495567;
+    text-align: center;
+    margin-bottom: 2rem;
 }
