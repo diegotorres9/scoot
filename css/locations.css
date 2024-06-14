@@ -1,0 +1,49 @@
+.location-hero {
+    background-image: url('../assets/images/careers-location-hero-mobile.jpg');
+    position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 128px;
+}
+.location-hero h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(2.5rem, 2vw + 1rem, 3.5rem);
+    line-height: clamp(2.5rem, 2vw + 1rem, 3.5rem);
+    color: #FFFFFF;
+}
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 72px 32px 120px 32px;
+}
+.location-map picture {
+    margin-bottom: 40px;
+}
+.map-wrapper .locations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.locations-container span {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #495567;
+    /* background-color: #FCB72B; */
+    background: rgba(252, 183, 43, .15);
+    /* padding: 22px 100px; */
+    width: 311px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.locations-container span:not(:last-child) {
+    margin-bottom: 1rem;
+}
