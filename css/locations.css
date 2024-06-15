@@ -14,7 +14,7 @@
     line-height: clamp(2.5rem, 2vw + 1rem, 3.5rem);
     color: #FFFFFF;
 }
-.map-wrapper {
+.map-wrapper, .message-us-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,4 +46,21 @@
 }
 .locations-container span:not(:last-child) {
     margin-bottom: 1rem;
+}
+/* ----------------------------------- */
+.message-us-container {
+    text-align: center;
+}
+.message-us-container h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(2rem, 1.648rem + 1.502vw, 3rem);
+    line-height: clamp(2rem, 1.648rem + 1.502vw, 3rem);;
+    color: #495567;
+}
+.message-us-container p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.563rem;
+    color: #939CAA;
+    margin: 2rem 0;
 }
