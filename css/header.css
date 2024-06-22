@@ -27,6 +27,9 @@ header .close-menu-icon
     position: absolute;
     margin-left: 34px;
 }
+header .fullscreen-nav {
+    display: none;
+}
 
 .mobile-nav
 {
@@ -62,4 +65,46 @@ header .close-menu-icon
 }
 .mobile-menu .scootin-cta-btn {
     margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 40px;
+        height: 96px;
+    }
+    header .mobile-menu-icon {
+        display: none;
+    }
+    header .fullscreen-nav {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .fullscreen-nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fullscreen-nav ul li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    .fullscreen-nav ul li a {
+        font-family: 'Space Mono', monospace;
+        font-size: 1.125rem;
+        text-decoration: none;
+        color: #939CAA;
+    }
+    .fullscreen-nav ul li:not(:first-child) {
+        margin-left: 2rem;
+    }
+
+}
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 22px 160px;
+    }
 }
