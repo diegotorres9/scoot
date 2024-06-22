@@ -14,8 +14,8 @@
 }
 .hero h1 {
     font-family: 'Space Mono', monospace;
-    font-size: clamp(2.5rem, 2vw + 1rem, 3.5rem);
-    line-height: clamp(2.5rem, 2vw + 1rem, 3.5rem);
+    font-size: clamp(2.5rem, 1.502vw + 1.648rem, 3.5rem);
+    line-height: clamp(2.5rem, 1.502vw + 1.648rem, 3.5rem);
     color: #FFFFFF;
 }
 .hero p {
@@ -130,6 +130,28 @@
     .hero
     {
         background-image: url('../assets/images/home-hero-tablet.jpg');
+        padding: 137px 98px 217px 98px;
+    }
+    .hero .svg-hero-container {
+        position: absolute;
+        bottom: 34px;
+        left: -120px;
+    }
+    .hero .svg-hero-container .hero-circles {
+        position: absolute;
+        bottom: 15px;
+        left: 690px;
+    }
+    /* ----------------------------------------------------------------- */
+    .instructions-container {
+        margin: 122px 98px 145px 98px;
+    }
+    .instructions-container .instruction {
+        display: grid;
+        grid-template-columns: 96px 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 80px;
+        text-align: start;
     }
 }
 
