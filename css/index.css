@@ -50,7 +50,7 @@
 .instruction .instruction-copy h2 {
     margin: 1.5rem 0;
     font-family: 'Space Mono', monospace;
-    font-size: (1.25rem, 2vw + 1rem, 1.25rem);
+    font-size: 1.25rem;
     line-height: 1.75rem;
     color: #495567;
 }
@@ -112,8 +112,8 @@
 }
 .feature-copy h2 {
     font-family: 'Space Mono', monospace;
-    font-size: clamp(2rem, 2vw + 1rem, 3rem);
-    line-height: clamp(2rem, 2vw + 1rem, 3rem);
+    font-size: clamp(2rem, 1.502vw + 1.648rem, 3rem);
+    line-height: clamp(2rem, 1.502vw + 1.648rem, 3rem);
     color: #495567;
     margin-top: 3.5rem;
     margin-bottom: 2rem;
@@ -131,6 +131,7 @@
     {
         background-image: url('../assets/images/home-hero-tablet.jpg');
         padding: 137px 98px 217px 98px;
+        overflow-x: hidden;
     }
     .hero .svg-hero-container {
         position: absolute;
@@ -145,6 +146,7 @@
     /* ----------------------------------------------------------------- */
     .instructions-container {
         margin: 122px 98px 145px 98px;
+        position: relative;
     }
     .instructions-container .instruction {
         display: grid;
@@ -152,6 +154,63 @@
         grid-template-rows: 1fr;
         column-gap: 80px;
         text-align: start;
+    }
+    .instructions-container .instruction:nth-child(2) {
+    margin: 2.5rem 0;
+}
+    .instructions-container .instruction-svg-container {
+        position: relative;
+    }
+    .instruction-svg-container svg {
+        position: absolute;
+        top: -121px;
+        left: 40px;
+    }
+    .instruction .instruction-icon {
+        z-index: 2;
+    }
+    /* ------------------------------------------------------------- */
+    .feature:nth-child(2) {
+        margin: 8rem 0;
+    }
+    .feature-copy {
+        padding: 0 6.125rem;
+    }
+    .feature-arrow-container-telemetry svg {
+        position: relative;
+        top: 300px;
+        left: 30px;
+    }
+    .feature .telemetry-circle{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 650px;
+    }
+    .feature-arrow-container-city svg {
+        position: relative;
+        top: 0px;
+        right: 120px;
+    }
+    .feature .city-circle{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 380px;
+    }
+    .feature-arrow-container-payments svg {
+        position: relative;
+        top: 0;
+        left: 360px;
+    }
+    .feature .payment-circle{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 650px;
     }
 }
 
