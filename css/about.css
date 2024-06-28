@@ -206,9 +206,16 @@ details p {
 @media screen and (min-width: 768px) {
     .about-hero {
         background-image: url('../assets/images/about-hero-tablet.jpg');
+        justify-content: space-between;
+        position: relative;
+    }
+    .hero-circles {
+        position: absolute;
+        left: 570px;
     }
     .about-wrapper {
         padding: 144px 98px 120px 98px;
+        overflow-x: hidden;
     }
     .about-container {
         display: flex;
@@ -216,6 +223,9 @@ details p {
         align-items: center;
         justify-content: center;
         /* padding: 144px 98px 120px 98px; */
+    }
+    .about-container .about-container-copy {
+        padding: 0 98px; 
     }
     .about-container .arrow-mobility-container {
         /* position: absolute; */
@@ -240,5 +250,11 @@ details p {
         width: 100%;
         height: 100%;
         right: 450px;  
+    }
+    .values-container {
+        margin: 0 9.75rem;
+    }
+    .faq-container {
+        margin: 7.5rem 2.5rem;
     }
 }
