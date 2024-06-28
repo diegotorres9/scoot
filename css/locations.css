@@ -54,7 +54,7 @@
 .message-us-container h2 {
     font-family: 'Space Mono', monospace;
     font-size: clamp(2rem, 1.648rem + 1.502vw, 3rem);
-    line-height: clamp(2rem, 1.648rem + 1.502vw, 3rem);;
+    line-height: clamp(2rem, 1.648rem + 1.502vw, 3rem);
     color: #495567;
 }
 .message-us-container p {
@@ -67,5 +67,40 @@
 @media screen and (min-width: 768px) {
     .location-hero {
         justify-content: space-between;
+    }
+    .map-wrapper .locations-container {
+        display: none;
+    }
+    .location-hero {
+        position: relative;
+    }
+    .location-map{
+        position: relative;
+    }
+    .location-tiles {
+        position: relative;
+    }
+    .location-tiles .new-york-tile {
+        position: absolute;
+        left: 95px;
+        top: 55px;
+    }
+    .location-tiles .london-tile {
+        position: absolute;
+        top: 25px;
+        left: 245px;
+    }
+    .location-tiles .yokohama-tile {
+        position: absolute;
+        top: 65px;
+        right: 40px;
+    }
+    .location-tiles .jakarta-tile {
+        position: absolute;
+        top: 170px;
+        right: 85px;
+    }
+    .message-us-container {
+        padding: 0 98px;
     }
 }
