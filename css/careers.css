@@ -139,7 +139,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 clamp(2rem, -0.927rem + 12.488vw, 10.313rem) clamp(7.5rem, 6.62rem + 3.756vw, 10rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
+    padding: 0 clamp(2rem, -0.927rem + 12.488vw, 10.313rem) clamp(7.5rem, 6.62rem + 3.756vw, 10rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
 }
 .jobs-wrapper .job {
     margin-bottom: 1rem;
@@ -149,8 +149,9 @@
     align-items: center;
     justify-content: center;
     padding: 2.25rem 2rem 2rem 2rem;
-    /* width: 311px; */
+    width: clamp(19.438rem, 1.854rem + 75.023vw, 69.375rem);
     text-align: center;
+    flex: 1;
 }
 .job-copy h3 {
     font-family: 'Space Mono', monospace;
@@ -176,8 +177,6 @@
     }
     .join-us-wrapper {
         position: relative;
-        margin-top: 144px;
-        margin-bottom: 120px;
         /* overflow-x: hidden; */
         /* padding: 144px 98px 120px 98px; */
     }
