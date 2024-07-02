@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 72px 32px 120px 32px;
+    margin: 4.5rem clamp(2rem, -0.927rem + 12.488vw, 10.313rem) 7.5rem clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
 }
 .join-container {
     position: relative;
@@ -70,7 +70,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 72px 32px 120px 32px;
+    /* margin: 72px 32px 120px 32px; */
+    margin-left: clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
+    margin-right: clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
+    margin-bottom: clamp(7.5rem, 6.95rem + 2.347vw, 9.063rem);
     position: relative;
 }
 .why-join-wrapper h2 {
@@ -127,13 +130,16 @@
     line-height: 1.5rem;
     color: #939CAA;
 }
+.join-us-circle {
+    display: none;
+}
 /* --------------------------------- */
 .jobs-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 72px 32px 120px 32px;
+    margin: 0 clamp(2rem, -0.927rem + 12.488vw, 10.313rem) clamp(7.5rem, 6.62rem + 3.756vw, 10rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
 }
 .jobs-wrapper .job {
     margin-bottom: 1rem;
@@ -143,7 +149,7 @@
     align-items: center;
     justify-content: center;
     padding: 2.25rem 2rem 2rem 2rem;
-    width: 311px;
+    /* width: 311px; */
     text-align: center;
 }
 .job-copy h3 {
@@ -160,4 +166,32 @@
     line-height: 1.563rem;
     color: #495567;
     margin-bottom: 1rem;
+}
+/* ---------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .careers-hero {
+        background-image: url('../assets/images/careers-locations-hero-tablet.jpg');
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+    .join-us-wrapper {
+        position: relative;
+        margin-top: 144px;
+        margin-bottom: 120px;
+        /* overflow-x: hidden; */
+        /* padding: 144px 98px 120px 98px; */
+    }
+    .join-us-wrapper .join-us-circle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 650px;
+        bottom: 30px;
+        display: block;
+    }
+    .join-arrow-container svg {
+        position: relative;
+        bottom: 0;
+        left: 35px;
+    }
 }

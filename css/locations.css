@@ -14,12 +14,14 @@
     line-height: clamp(2.5rem, 2vw + 1rem, 3.5rem);
     color: #FFFFFF;
 }
+.map-wrapper {
+    margin: clamp(4.5rem, 3.444rem + 4.507vw, 7.5rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
+}
 .map-wrapper, .message-us-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 72px 32px 120px 32px;
 }
 .location-map picture {
     margin-bottom: 40px;
@@ -47,9 +49,14 @@
 .locations-container span:not(:last-child) {
     margin-bottom: 1rem;
 }
+.location-tiles {
+    display: none;
+}
 /* ----------------------------------- */
 .message-us-container {
     text-align: center;
+    padding: 0 clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
+    padding-bottom: clamp(4.5rem, 3.444rem + 4.507vw, 7.5rem);
 }
 .message-us-container h2 {
     font-family: 'Space Mono', monospace;
@@ -66,6 +73,7 @@
 }
 @media screen and (min-width: 768px) {
     .location-hero {
+        background-image: url('../assets/images/careers-locations-hero-tablet.jpg');
         justify-content: space-between;
     }
     .map-wrapper .locations-container {
@@ -79,6 +87,7 @@
     }
     .location-tiles {
         position: relative;
+        display: block;
     }
     .location-tiles .new-york-tile {
         position: absolute;
@@ -99,8 +108,5 @@
         position: absolute;
         top: 170px;
         right: 85px;
-    }
-    .message-us-container {
-        padding: 0 98px;
     }
 }

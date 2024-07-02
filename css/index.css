@@ -35,7 +35,11 @@
 }
 /* ----------------------------------------------------------------------------- */
 .instructions-container {
-    margin: 7.5rem 2rem;
+    /* margin: 7.5rem 2rem; */
+    margin: clamp(7.5rem, 6.62rem + 3.756vw, 10rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
+}
+.instruction-svg-container {
+    display: none;
 }
 .instructions-container .instruction{
     display: flex;
@@ -62,7 +66,7 @@
 }
 /* ----------------------------------------------------------------------------- */
 .features-container {
-    padding: 7.5rem 2rem;
+    padding: clamp(9.063rem, 7.852rem + 5.164vw, 12.5rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
     position: relative;
     overflow-x: hidden;
 }
@@ -87,6 +91,10 @@
     top: 185px;
     left: 30px;
 }
+.feature .telemetry-circle, .city-circle, .payment-circle {
+    display: none;
+}
+
 .feature .feature-arrow-container-city {
     position: absolute;
     width: 100%;
@@ -148,6 +156,9 @@
         margin: 122px 98px 145px 98px;
         position: relative;
     }
+    .instruction-svg-container {
+        display: block;
+    }
     .instructions-container .instruction {
         display: grid;
         grid-template-columns: 96px 1fr;
@@ -187,6 +198,7 @@
         height: 100%;
         top: 0;
         left: 650px;
+        display: block;
     }
     .feature-arrow-container-city svg {
         position: relative;
@@ -199,6 +211,7 @@
         height: 100%;
         top: 0;
         right: 380px;
+        display: block;
     }
     .feature-arrow-container-payments svg {
         position: relative;
@@ -211,6 +224,7 @@
         height: 100%;
         top: 0;
         left: 650px;
+        display: block;
     }
 }
 
