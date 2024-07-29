@@ -139,7 +139,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 clamp(2rem, -0.927rem + 12.488vw, 10.313rem) clamp(7.5rem, 6.62rem + 3.756vw, 10rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
+    margin: 0 clamp(2rem, -0.927rem + 12.488vw, 10.313rem) clamp(7.5rem, 6.62rem + 3.756vw, 10rem) clamp(2rem, -0.927rem + 12.488vw, 10.313rem);
 }
 .jobs-wrapper .job {
     margin-bottom: 1rem;
@@ -149,7 +149,9 @@
     align-items: center;
     justify-content: center;
     padding: 2.25rem 2rem 2rem 2rem;
-    width: clamp(19.438rem, 1.854rem + 75.023vw, 69.375rem);
+    /* width: clamp(19.438rem, 1.854rem + 75.023vw, 69.375rem); */
+    /* width: 311px; */
+    width: clamp(20rem, -15rem + 93.333vw, 69rem);
     text-align: center;
     flex: 1;
 }
@@ -176,21 +178,33 @@
         overflow-x: hidden;
     }
     .join-us-wrapper {
-        position: relative;
-        /* overflow-x: hidden; */
-        /* padding: 144px 98px 120px 98px; */
+        overflow-x: hidden;
+        /* position: relative; */
     }
-    .join-us-wrapper .join-us-circle {
+    .join-container {
+        position: relative;
+    }
+    .join-container .join-us-circle {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 650px;
-        bottom: 30px;
         display: block;
+        left: 450px;
     }
     .join-arrow-container svg {
         position: relative;
         bottom: 0;
         left: 35px;
+    }
+    .jobs-wrapper .job {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .job .job-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .job-copy h3 {
+        text-align: start;
     }
 }
